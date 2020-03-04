@@ -1,6 +1,6 @@
 import random
 while True:
-    ans = input('What year? 1775, 1861, or 1917) ')
+    ans = input('What year? 1775, 1861, 1917 or 1941) ')
     if ans.lower().strip() == '1775':
         print('THE REVOLUTIONARY WAR')
         print('The Revolutionary war was the 13(14) colonies escaping from englands control')
@@ -43,9 +43,18 @@ while True:
         elif play_again.lower().strip() == "no":
             exit()
 
-    else:
-        print("I didn't understand")
-        continue
+    if ans.lower().strip() == "1941":
+        print("WW2")
+        print('The only reason the us Even joined WW2 is Because of Pearl Harbor')
+        print("when th japanesse bombed pearl harbor The us need a good reason to attack back")
+        print("japan was on the axis(The bad guys) So the us joined the WW2")
+        print("the Us Was a BIG Help Against the demoralized British soldiers")
+        print("Yes only british. germany had set some stuff up to make france look like it was on the axis")
+        play_again = input("Would you like to restart ")
+        if play_again.lower().strip() == 'yes':
+            continue
+        elif play_again.lower().strip() == "no":
+            exit()
 
 
 
